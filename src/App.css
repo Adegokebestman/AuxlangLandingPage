@@ -7,6 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
 
+@font-face {
+  font-family: 'BiggerDisplay';
+  src: url('../public/BiggerDisplay.otf') format('opentype');
+}
 
 .App {
   text-align: center;
@@ -15,46 +19,101 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 body,
 html {
-  cursor: none;
+  background-color: #041B15;
+}
+
+@media (pointer: fine) {
+
+  body,
+  html {
+    cursor: none;
+  }
+
+  .hover-scale {
+    cursor: none;
+  }
+
+  .circlebox {
+    cursor: none;
+  }
+
+  .about,
+  .close-popup {
+    cursor: none;
+  }
+
+  .custom-cursor {
+    display: block;
+  }
+}
+
+@media (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
 }
 
 .main-title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
   text-transform: uppercase;
-  font-size: 15em;
+  font-size: 300px;
   letter-spacing: 10px;
   margin-top: 10px;
-  text-align: left;
-  font-family: 'Syne', sans-serif;
+  text-align: center;
+  font-family: 'BiggerDisplay', sans-serif;
+  /* font:700 min(15vw, 18.5rem) / .8 var(BiggerDisplay); */
   font-weight: 700;
   /* Align to the left side of the page */
   margin-left: 20px;
+  gap: 20px;
   /* Add left margin to adjust distance from the left edge */
+}
+
+.logo{
+  height: 60px;
+  width: auto;
+  margin-top: 85px;
+}
+
+.emailbox {
+  flex: auto;
 }
 
 .email {
   font-family: 'Cormorant', sans-serif;
   margin-top: 10px;
-  font-size: 10em;
+  font-size: 50px;
   font-style: italic;
   font-weight: lighter;
   animation: scroll 10s linear infinite;
-  cursor: pointer;
   /* Adjust the duration as needed */
   text-align: left;
-  margin-left: 20px;
+  margin-left: 10px;
   white-space: nowrap;
   transition: background 0.4s ease-in-out;
   /* Prevent text from breaking into a new line */
   position: relative;
+  width: fit-content;
+  padding: 0 15px;
+  display: flex;
+  gap: 0 50px;
+  color: #fff;
+  text-decoration: none;
   /* Relative position for the pseudo element */
 }
 
 .email::after {
-  content: " hello@auxlang.io";
+  content: "";
   /* One copy of the email text */
   position: absolute;
   /* Position the content right next to the original text */
@@ -78,7 +137,7 @@ html {
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
     /* Scroll 100% of the width to show 2 texts */
   }
 }
@@ -100,7 +159,7 @@ html {
   background: linear-gradient(45deg, #97DE44, #39D140, #20AB8E);
   border-radius: 50%;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.25s ease-in-out;
   /* Transition effect for scaling */
 }
 
@@ -157,11 +216,10 @@ html {
   font-style: italic;
   font-weight: 400;
   position: absolute;
-  bottom: 5%;
-  left: 5%;
+  bottom: 40px;
+  left: 80px;
   transform: rotate(270deg);
   transform-origin: left bottom;
-  cursor: pointer;
   font-size: 2em;
   transition: background 0.2s ease-in-out;
 }
@@ -175,14 +233,14 @@ html {
 
 .footer-popup {
   position: absolute;
-  font-size: 2.5em;
+  font-size: 20px;
   font-family: 'Syne', sans-serif;
   text-align: left;
   bottom: 0;
   left: 0;
   right: 0;
   background: linear-gradient(45deg, #97DE44, #39D140, #20AB8E);
-  padding: 60px;
+  padding: 40px;
   display: none;
 }
 
@@ -196,9 +254,8 @@ html {
 
 .close-popup {
   position: absolute;
-  top: 25px;
+  top: 15px;
   right: 25px;
-  cursor: pointer;
 }
 
 .custom-cursor {
@@ -222,6 +279,178 @@ html {
   cursor: pointer;
 }
 
-.hover-scale {
-  cursor: none;
+
+/*  */
+
+.circlebox {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 176px;
+  height: 176px;
+  background: linear-gradient(45deg, #97DE44, #39D140, #20AB8E);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease-out 0s;
+  transform-origin: center center;
+}
+
+.get_text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  animation: spin 10s linear infinite;
+}
+
+.music-icon {
+  filter: invert(1);
+  width: 60px;
+  height: 60px;
+}
+
+.circlebox:hover {
+  transition: transform 0.4s ease-out 0s;
+}
+
+@media (max-width: 1199px) {
+  .main-title {
+    font-size: 200px;
+  }
+
+  .logo{
+    height: 50px;
+    width: auto;
+    margin-top: 60px;
+  }
+  .main-title{
+    gap: 10px;
+    letter-spacing: 5px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .logo{
+    height: 50px;
+    width: auto;
+    margin-top: 25px;
+  }
+  .main-title{
+    gap: 10px;
+    letter-spacing: 5px;
+    font-size: 130px;
+  }
+
+  .email {
+    font-size: 50px;
+  }
+
+  .footer-popup {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+.logo{
+    height: 20px;
+    width: auto;
+    margin-top: 5px;
+  }
+  .main-title{
+    gap: 10px;
+    letter-spacing: 5px;
+  }
+  .main-title,
+  .email {
+    font-size: 70px;
+  }
+
+  .footer-popup {
+    font-size: 22px;
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .logo{
+    height: 20px;
+    width: auto;
+    margin-top: 25px;
+  }
+  .main-title{
+    gap: 10px;
+    letter-spacing: 5px;
+    font-size: 70px !important;
+
+  }
+  .main-title,
+  .email {
+    font-size: 28px;
+  }
+
+  .email {
+    gap: 0 10px;
+  }
+
+  .footer-popup {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .circlebox {
+    width: 136px;
+    height: 136px;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .music-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about {
+    font-size: 26px;
+    left: 40px;
+  }
+}
+
+@media (max-width: 380px) {
+  .logo{
+    height: 20px;
+    width: auto;
+    margin-top: 25px;
+  }
+  .main-title{
+    gap: 10px;
+    letter-spacing: 5px;
+    font-size: 65px !important;
+
+  }
+
+}
+
+@media (max-width: 320px) {
+  .logo{
+    height: 20px;
+    width: auto;
+    margin-top: 15px;
+  }
+  .main-title{
+    gap: 10px;
+    letter-spacing: 5px;
+    font-size: 50px !important;
+
+  }
+  .email {
+    font-size: 24px;
+  }
+
 }
