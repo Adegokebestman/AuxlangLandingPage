@@ -51,7 +51,7 @@ function App() {
         <span>RECORDS</span>
       </div>
       <div className='emailbox'>
-        <a href='mailto:hello@auxlang.io'
+        <a href='mailto:hello@utcrecords.com'
           className="email hover-scale"
         >
           AROUND THE CLOCK, ACROSS THE GLOBE
@@ -62,7 +62,7 @@ function App() {
 
         </a>
       </div>
-      <a href='mailto:hello@auxlang.io' className='circlebox' id='crclebx' onMouseOver={() => { setscale(true) }} onMouseOut={() => { setscale(false) }}>
+      <a href='mailto:hello@utcrecords.com' className='circlebox' id='crclebx' onMouseOver={() => { setscale(true) }} onMouseOut={() => { setscale(false) }}>
         <img src="./images/get_in_touch.svg" className='get_text' />
         <img src="./images/music_icon.svg" className='music-icon' />
       </a>
