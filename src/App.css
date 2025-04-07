@@ -74,7 +74,7 @@ html {
   /* font:700 min(15vw, 18.5rem) / .8 var(BiggerDisplay); */
   font-weight: 700;
   /* Align to the left side of the page */
-  margin-left: 20px;
+  /* margin-left: 20px; */
   gap: 20px;
   /* Add left margin to adjust distance from the left edge */
 }
@@ -366,6 +366,7 @@ html {
   .main-title{
     gap: 10px;
     letter-spacing: 5px;
+    margin-left: 0px;
   }
   .main-title,
   .email {
@@ -387,7 +388,8 @@ html {
   .main-title{
     gap: 10px;
     letter-spacing: 5px;
-    font-size: 70px !important;
+    font-size: 90px !important;
+    margin-left: 0px;
 
   }
   .main-title,
@@ -422,16 +424,23 @@ html {
   }
 }
 
+@media (max-width: 505px) {
+  .App {
+    height: 95vh;
+  }
+}
 @media (max-width: 380px) {
   .logo{
     height: 20px;
     width: auto;
     margin-top: 25px;
   }
+
   .main-title{
     gap: 10px;
     letter-spacing: 5px;
-    font-size: 65px !important;
+    font-size: 75px !important;
+    margin-left: 0px;
 
   }
 
@@ -446,7 +455,8 @@ html {
   .main-title{
     gap: 10px;
     letter-spacing: 5px;
-    font-size: 50px !important;
+    font-size: 60px !important;
+    margin-left: 0px;
 
   }
   .email {
