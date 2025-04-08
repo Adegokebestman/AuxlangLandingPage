@@ -54,10 +54,10 @@ function App() {
         <a href='mailto:hello@utcrecords.com'
           className="email hover-scale"
         >
-          AROUND THE CLOCK - ACROSS THE GLOBE
-          AROUND THE CLOCK - ACROSS THE GLOBE
-          AROUND THE CLOCK - ACROSS THE GLOBE
-          AROUND THE CLOCK - ACROSS THE GLOBE
+          AROUND THE CLOCK - ACROSS THE GLOBE -
+          AROUND THE CLOCK - ACROSS THE GLOBE -
+          AROUND THE CLOCK - ACROSS THE GLOBE -
+          AROUND THE CLOCK - ACROSS THE GLOBE -
 
 
         </a>
