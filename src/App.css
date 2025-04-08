@@ -426,20 +426,45 @@ html {
 
 @media (max-width: 505px) {
   .App {
-    height: 95vh;
+    height: 93vh;
+  }
+   /* Make the main text (UTC, star, and RECORDS) larger */
+   .main-title {
+    font-size: 130px !important; /* Adjust the size as needed */
+    gap: 10px;
+  }
+
+  /* Adjust the logo size */
+  .logo {
+    height: 30px;
+    margin-top: 0px;
+  }
+
+  /* Stack the elements vertically (if needed) */
+  .main-title {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 15px; /* Adjust as needed */
+  }
+
+  .main-title span {
+    margin-bottom: 0px; /* Space between elements */
   }
 }
 @media (max-width: 380px) {
   .logo{
     height: 20px;
     width: auto;
-    margin-top: 25px;
+    margin-top: 0px;
   }
 
   .main-title{
     gap: 10px;
     letter-spacing: 5px;
-    font-size: 75px !important;
+    font-size: 100px !important;
     margin-left: 0px;
 
   }
@@ -450,12 +475,12 @@ html {
   .logo{
     height: 20px;
     width: auto;
-    margin-top: 15px;
+    margin-top: 0px;
   }
   .main-title{
     gap: 10px;
     letter-spacing: 5px;
-    font-size: 60px !important;
+    font-size: 90px !important;
     margin-left: 0px;
 
   }
