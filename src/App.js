@@ -81,7 +81,7 @@ function App() {
       {/* The popup */}
       <div className={`footer-popup ${isPopupVisible ? 'active' : ''}`}>
         <div className="close-popup" onClick={() => setPopupVisible(false)}>X</div>
-        <p><b>UTC RECORDS</b> is a global record label and distribution company for artists who don’t follow the rules—they redefine what lasts.
+        <p className="about-text"><b>UTC RECORDS</b> is a global record label and distribution company for artists who don’t follow the rules—they redefine what lasts.
         <br /><br />
 
 We’re not here for one-hit wonders or viral moments. We’re building with artists whose music leaves a mark—songs so powerful they don’t just chart, they live in people’s memories. The kind of music that, 20 years from now, instantly pulls you back to the exact feeling, place, and moment you first heard it. That’s impact. That’s legacy.

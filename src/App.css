@@ -238,7 +238,6 @@ html {
   text-align: left;
   bottom: 0;
   left: 0;
-  height: 100%;
   right: 0;
   background: linear-gradient(45deg, #97DE44, #39D140, #20AB8E);
   padding: 40px;
@@ -393,6 +392,16 @@ html {
     margin-left: 0px;
 
   }
+  .close-popup {
+    position: absolute;
+    top: 15px;
+    margin-top: 40px;
+    right: 25px;
+}
+  .about-text{
+    text-align: center;
+    padding-top: 80px;
+  }
   .main-title,
   .email {
     font-size: 28px;
@@ -405,6 +414,7 @@ html {
   .footer-popup {
     font-size: 18px;
     padding: 20px;
+    height: 100%;
   }
 
   .circlebox {
@@ -486,6 +496,13 @@ html {
     font-size: 80px !important;
     margin-left: 0px;
 
+  }
+  .about-text{
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    justify-content: center;
+    padding-top: 80px;
   }
   .email {
     font-size: 24px;
