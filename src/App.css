@@ -430,7 +430,7 @@ html {
   }
    /* Make the main text (UTC, star, and RECORDS) larger */
    .main-title {
-    font-size: 130px !important; /* Adjust the size as needed */
+    font-size: 110px !important; /* Adjust the size as needed */
     gap: 10px;
   }
 
