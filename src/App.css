@@ -426,11 +426,11 @@ html {
 
 @media (max-width: 505px) {
   .App {
-    height: 93vh;
+    height: 90vh;
   }
    /* Make the main text (UTC, star, and RECORDS) larger */
    .main-title {
-    font-size: 110px !important; /* Adjust the size as needed */
+    font-size: 100px !important; /* Adjust the size as needed */
     gap: 10px;
   }
 
@@ -461,12 +461,12 @@ html {
     margin-top: 0px;
   }
   .app{
-    height: 89vh;
+    height: 82vh;
   }
   .main-title{
     gap: 10px;
     letter-spacing: 5px;
-    font-size: 90px !important;
+    font-size: 85px !important;
     margin-left: 0px;
 
   }
