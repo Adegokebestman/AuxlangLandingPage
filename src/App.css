@@ -481,6 +481,10 @@ html {
     margin-left: 0px;
 
   }
+  .about-text{
+    text-align: center;
+    padding-top: 180px;
+  }
 
 }
 
