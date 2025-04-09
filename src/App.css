@@ -427,8 +427,6 @@ html {
 @media (max-width: 505px) {
   .App {
     height: 93vh;
-    max-height: 93vh; /* Ensure it doesn't exceed 93vh */
-    overflow: hidden; /* Prevent scrolling */
   }
    /* Make the main text (UTC, star, and RECORDS) larger */
    .main-title {
@@ -468,7 +466,7 @@ html {
   .main-title{
     gap: 10px;
     letter-spacing: 5px;
-    font-size: 100px !important;
+    font-size: 90px !important;
     margin-left: 0px;
 
   }
@@ -484,7 +482,7 @@ html {
   .main-title{
     gap: 10px;
     letter-spacing: 5px;
-    font-size: 90px !important;
+    font-size: 80px !important;
     margin-left: 0px;
 
   }
