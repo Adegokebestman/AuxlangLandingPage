@@ -238,6 +238,7 @@ html {
   text-align: left;
   bottom: 0;
   left: 0;
+  height: 100%;
   right: 0;
   background: linear-gradient(45deg, #97DE44, #39D140, #20AB8E);
   padding: 40px;
